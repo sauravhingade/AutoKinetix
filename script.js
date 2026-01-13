@@ -5,6 +5,15 @@ let mouseX = 0;
 let mouseY = 0;
 let glowX = 0;
 let glowY = 0;
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    // Optional: animate hamburger into X
+    hamburger.classList.toggle('active');
+});
+
 
 // Track Mouse Movement
 window.addEventListener('mousemove', (e) => {
